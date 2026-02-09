@@ -40,8 +40,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-navy-950 mb-1">Email</h4>
-                      <a href="mailto:your.email@example.com" className="text-accent-600 hover:text-accent-700 transition-colors">
-                        your.email@example.com
+                      <a href="mailto:ojo.christian@yahoo.com" className="text-accent-600 hover:text-accent-700 transition-colors">
+                        ojo.christian@yahoo.com
                       </a>
                       <p className="text-sm text-navy-600 mt-1">Response time: 24 hours</p>
                     </div>
@@ -58,8 +58,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-navy-950 mb-1">LinkedIn</h4>
-                      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-accent-600 hover:text-accent-700 transition-colors">
-                        linkedin.com/in/yourprofile
+                      <a href="https://www.linkedin.com/in/christian-ojo-90a9483a7" target="_blank" rel="noopener noreferrer" className="text-accent-600 hover:text-accent-700 transition-colors">
+                        linkedin.com/in/christian-ojo-90a9483a7
                       </a>
                       <p className="text-sm text-navy-600 mt-1">Let's connect professionally</p>
                     </div>
@@ -96,35 +96,19 @@ export default function Contact() {
                   Schedule Your Free Call
                 </h3>
                 
-                {/* Calendly embed placeholder */}
-                <div className="aspect-[3/4] bg-gradient-to-br from-navy-50 to-accent-50 rounded-xl flex items-center justify-center border-2 border-dashed border-navy-200">
-                  <div className="text-center p-8">
-                    <svg className="w-16 h-16 text-navy-400 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    <p className="text-navy-600 font-semibold mb-2">Calendly Widget Goes Here</p>
-                    <p className="text-sm text-navy-500 mb-4">Replace this with your Calendly embed code</p>
-                    <div className="bg-navy-100 rounded-lg p-4 text-left">
-                      <code className="text-xs text-navy-700 break-all">
-                        {`<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" 
-  data-url="https://calendly.com/YOUR-LINK" 
-  style="min-width:320px;height:700px;">
-</div>
-<script type="text/javascript" 
-  src="https://assets.calendly.com/assets/external/widget.js" 
-  async>
-</script>
-<!-- Calendly inline widget end -->`}
-                      </code>
-                    </div>
-                  </div>
+                {/* Calendly embed */}
+                <div className="bg-white rounded-xl overflow-hidden border-2 border-navy-100 shadow-sm">
+                  <div 
+                    className="calendly-inline-widget" 
+                    data-url="https://calendly.com/ojo-christian?hide_landing_page_details=1&hide_gdpr_banner=1" 
+                    style={{ minWidth: '320px', height: '700px' }}
+                  ></div>
                 </div>
 
                 <p className="text-sm text-navy-600 text-center mt-6">
                   <strong>Prefer email?</strong> Reach me at{' '}
-                  <a href="mailto:your.email@example.com" className="text-accent-600 hover:text-accent-700 font-semibold">
-                    your.email@example.com
+                  <a href="mailto:ojo.christian@yahoo.com" className="text-accent-600 hover:text-accent-700 font-semibold">
+                    ojo.christian@yahoo.com
                   </a>
                 </p>
               </div>

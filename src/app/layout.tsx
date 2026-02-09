@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, Outfit } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const dmSans = DM_Sans({ 
@@ -27,7 +28,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${dmSans.variable} ${outfit.variable}`}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <Script 
+          src="https://assets.calendly.com/assets/external/widget.js" 
+          strategy="lazyOnload"
+        />
+      </body>
     </html>
   );
 }
