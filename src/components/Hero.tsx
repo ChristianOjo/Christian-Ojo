@@ -58,7 +58,7 @@ export default function Hero() {
 
             <a 
               href="#case-study" 
-              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white border-2 border-white/20 rounded-xl hover:bg-white/5 hover:border-white/30 transition-all"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white border-2 border-white/20 rounded-xl hover:bg-white/10 hover:border-accent-400/50 hover:scale-105 transition-all"
             >
               View My Work
               <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">

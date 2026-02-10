@@ -27,7 +27,7 @@ export default function CaseStudy() {
   ];
 
   return (
-    <section id="case-study" className="py-24 lg:py-32 bg-gradient-to-b from-navy-900 to-navy-950 relative overflow-hidden grain">
+    <section id="case-study" className="py-32 lg:py-40 bg-gradient-to-b from-navy-900 to-navy-950 relative overflow-hidden grain">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-accent-500 rounded-full blur-3xl"></div>
@@ -85,7 +85,7 @@ export default function CaseStudy() {
                       </div>
                       <div>
                         <h4 className="text-xl font-display font-bold text-white mb-3">The Problem</h4>
-                        <p className="text-navy-300 leading-relaxed">
+                        <p className="text-navy-300 text-lg leading-relaxed">
                           {project.problem}
                         </p>
                       </div>
@@ -102,7 +102,7 @@ export default function CaseStudy() {
                       </div>
                       <div>
                         <h4 className="text-xl font-display font-bold text-white mb-3">The Solution</h4>
-                        <p className="text-navy-300 leading-relaxed">
+                        <p className="text-navy-300 text-lg leading-relaxed">
                           {project.solution}
                         </p>
                       </div>

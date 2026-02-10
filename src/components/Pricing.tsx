@@ -111,7 +111,7 @@ export default function Pricing() {
               {/* Features */}
               <ul className="space-y-3 mb-6">
                 {tier.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-navy-300">
+                  <li key={idx} className="flex items-start gap-3 text-navy-300 text-lg">
                     <svg className="w-5 h-5 text-accent-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>

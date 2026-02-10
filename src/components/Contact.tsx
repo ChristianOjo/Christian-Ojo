@@ -96,13 +96,44 @@ export default function Contact() {
                   Schedule Your Free Call
                 </h3>
                 
-                {/* Calendly embed */}
-                <div className="bg-white rounded-xl overflow-hidden border-2 border-navy-100 shadow-sm">
-                  <div 
-                    className="calendly-inline-widget" 
-                    data-url="https://calendly.com/ojo-christian?hide_landing_page_details=1&hide_gdpr_banner=1" 
-                    style={{ minWidth: '320px', height: '700px' }}
-                  ></div>
+                {/* Calendly CTA */}
+                <div className="bg-white rounded-2xl p-10 border-2 border-navy-100 shadow-xl text-center">
+                  <div className="w-20 h-20 rounded-full bg-accent-100 flex items-center justify-center mx-auto mb-8">
+                    <svg className="w-10 h-10 text-accent-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <h3 className="text-3xl font-display font-bold text-navy-950 mb-4">
+                    Book a Discovery Call
+                  </h3>
+                  <p className="text-navy-600 mb-8 text-lg">
+                    Choose a time that works best for you to discuss your project in detail.
+                  </p>
+                  
+                  {/* Calendly link as a button */}
+                  <a 
+                    href="https://calendly.com/ojo-christian"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      // @ts-ignore
+                      if (window.Calendly) {
+                        // @ts-ignore
+                        window.Calendly.initPopupWidget({ url: 'https://calendly.com/ojo-christian' });
+                      } else {
+                        window.open('https://calendly.com/ojo-christian', '_blank');
+                      }
+                    }}
+                    className="inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-white bg-gradient-to-r from-accent-600 to-accent-500 rounded-2xl hover:scale-105 hover:shadow-2xl hover:shadow-accent-500/50 transition-all w-full"
+                  >
+                    Select a Time Slot
+                    <svg className="w-6 h-6 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </a>
+                  
+                  <p className="text-sm text-navy-400 mt-6 italic">
+                    Powered by Calendly • 30 min session
+                  </p>
                 </div>
 
                 <p className="text-sm text-navy-600 text-center mt-6">
